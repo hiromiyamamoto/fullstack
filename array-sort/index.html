@@ -5,18 +5,10 @@
 <title>Array-並べ替え</title>
 <script>
 var list = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
-console.log(list);
 // 反転する
 list.reverse();
-console.log(list); // [ 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 ]
-
-list.reverse(); // 再び反転すると元に戻る
-list; // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-console.log(list);
-// 並べ替える
 list.sort(); // 昇順に並べ替える。※整数の配列でも辞書順に並ぶことに注意！
-list; // [1,10,2,3,4,5,6,7,8,9]
-// 整数の配列を意図通りに並び替えるには引数として比較関数を渡す必要がある。
+console.log(list); // [ 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 ]
 list.sort(
     // 引数 a, b: 比較する2つの要素。
     function( a, b ) {
