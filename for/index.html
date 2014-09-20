@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>for文</title>
+<script type="text/javascript">
+	var mnt = new Array(
+		"富士山",
+		"白根山",
+		"奥穂高岳",
+		"間ノ岳",
+		"槍ヶ岳"
+		);
+	document.write('<table border="2">');
+
+	for (var i = 0; i < mnt.length; i++) {
+		document.write('<tr>');
+		document.write('<td>'+mnt[i]+'</td>');
+		document.write('</tr>');
+	};
+
+	document.write('</table>'); 
+</script>
+</head>
+<body>
+</body>
+</html>
