@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>bind</title>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+    $("body").on("click","p",function(){
+        $(this).after("<p>さらにクリック！</p>");
+    });
+});
+</script>
+</head>
+<body>
+<p>ここをクリックしてください</p>
+</body>
+</html>

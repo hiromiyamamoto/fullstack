@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>基本フィルタ</title>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(function(){
+		$("li:first").css('color','red');
+		$("li:first-child").css('text-decoration','underline');
+
+	});
+</script>
+</head>
+<body>
+	<ul>
+		<li>List item1-1</li>
+		<li>List item1-2</li>
+		<li>List item1-3</li>
+		<li>List item1-4</li>
+		<li>List item1-5</li>
+	</ul>
+	<ul>
+		<li>List item2-1</li>
+		<li>List item2-2</li>
+		<li>List item2-3</li>
+		<li>List item2-4</li>
+		<li>List item2-5</li>
+	</ul>
+</body>
+</html>

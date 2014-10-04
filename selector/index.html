@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>セレクター</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		$('h1').text('jQueryで見出しを変更');
+		$('.text').css("color","red");
+		$('#main').css({
+			'border':'1px sold #DDD',
+			'padding':'10px',
+			'background-color':'lightpink'
+		});
+	});
+</script>
+</head>
+<body>
+<div id="main">
+<h1>見出し</h1>
+<p class="text">段落テキスト</p>
+</div>
+</body>
+</html>

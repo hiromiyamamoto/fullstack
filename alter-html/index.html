@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>HTML属性変更</title>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+$(function(){
+    $( ".sample1 img" ).attr('src','https://lh6.googleusercontent.com/-6nwwaBy6dAY/U389L0GF5oI/AAAAAAAAAr8/sePEFayGOIQ/w600-h908-no/Mona_Lisa.jpg');
+    $(".sample2").addClass('red');
+    var inputVal = $("#input").val();
+    $(".sample3").text(inputVal);
+});
+</script>
+<style>
+.red{color: red}
+</style>
+</head>
+<body>
+<div class="sample1"><img /></div>
+<div class="sample2">sample2</div>
+<input type="text" value="入力値1" id="input">
+<div class="sample3">sample3</div>
+</body>
+</html>
